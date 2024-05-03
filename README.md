@@ -1,0 +1,2 @@
+- Implementing a TFT Champions trait viewer that shows all traits for the current set's roster list
+- Allow a global database that consists of champions suggested by others as a fun way of thinking about what could have made this set even better

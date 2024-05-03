@@ -1,2 +1,3 @@
-- Implementing a TFT Champions trait viewer that shows all traits for the current set's roster list
-- Allow a global database that consists of champions suggested by others as a fun way of thinking about what could have made this set even better
+# TFT Champion Trait Viewer (NOT LIVE YET)
+This is a web application that allows users to view all the traits of current champions and to add their own champions as well for the popular game TeamFight Tactics. This is designed to not only help players view and remember traits for each champion, but to also add their own champions to the current set as a fun little way to see champion ideas. These champions will typically be from outside of the main League of Legends roster and from the lore itself, following in similar pattern to the new champions added in Kobuko and Alune.
+<img width="1419" alt="Screenshot 2024-05-03 at 12 33 26 AM" src="https://github.com/seoandrew/tftChampTraitViewer/assets/156002167/77589399-cad9-4127-969d-c6b451d0bcc8">

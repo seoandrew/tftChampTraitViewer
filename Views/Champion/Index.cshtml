@@ -1,0 +1,72 @@
+@model IEnumerable<tftChampTraitViewer.Models.Champion>
+
+@{
+    ViewData["Title"] = "Champion Table";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Champion Table</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampOrigin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampClass)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampRange)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ChampPosition)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampOrigin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampClass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampCost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampRange)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChampPosition)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
